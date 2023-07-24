@@ -178,6 +178,8 @@
 
                                 <li><a href="{{ route('admin.photos.index')}}"><span>  اضافة صور للمعرض </span></a></li>
                                 <li><a href="{{ route('admin.baners.index')}}"><span> البانر  </span></a></li>
+                                <li><a href="{{ route('admin.categories.index')}}"><span> الاقسام  </span></a></li>
+                                <li><a href="{{ route('admin.works.index')}}"><span> الاعمال  </span></a></li>
                             </ul>
                         </li>
 

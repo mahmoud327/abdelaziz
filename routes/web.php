@@ -2,12 +2,14 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\banersController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\contectsController;
 use App\Http\Controllers\massagesController;
 use App\Http\Controllers\PhotosController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\banersController as UserBanersController;
 use App\Http\Controllers\User\photosController as UserPhotosController;
+use App\Http\Controllers\WorkController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -45,6 +47,10 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
     Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(function () {
         Route::get('/', [AdminController::class, 'index'])->name('index');
+
+        Route::resource('categories', CategoryController::class);
+        Route::resource('works', WorkController::class);
+
         Route::resource('/photos', PhotosController::class);
         Route::resource('/baners', banersController::class);
         Route::resource('/contects', contectsController::class);

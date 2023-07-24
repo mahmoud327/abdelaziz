@@ -44,6 +44,45 @@
                     <div class="pagination"></div>
                 </div>
             </div>
+
+            <div class="block block-type-1 style-2">
+                <span class="offset-160 md-offset-80"></span>
+                <div class="container">
+                    <div class="row">
+                        <div class=" offset-55 md-offset-90"></div>
+                        <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 wow fadeInDown" data-wow-delay="0.3s">
+                            <div class="animated-block scroll-animation normal-square animate-lower">
+                                <span class="top"></span>
+                                <span class="right"></span>
+                                <span class="bottom"></span>
+                                <span class="left"></span>
+                                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                    <div class="table-view">
+                                        <div class="cell-view">
+                                            <article class="large grei-919191 align-center">
+                                                <p>We are Creative Digital Agency</p>
+                                            </article>
+                                            <article class="main large dark-555555 align-center">
+                                                <div class="offset-15"></div>
+                                                <h1 class="h1 title bg-title active-element">Perfect & Elegant<span class="bg"></span></h1>
+                                                <div class="offset-15"></div>
+                                                <p>
+                                                 Aliquam erat volutpat. Donec volutpat facilisis diam at dignissim. Cras turpis lectus, dapibus ullamcorper dui sed, sodales consectetur diam. Vivamus eget leo et risus aliquam suscipit purus lacinia.
+                                                </p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="circle-decoration animate-circle big-circle" id="circle-id4"></div>
+                            </div>
+                            <span class="offset-50 md-offset-25"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <livewire:filter-search-component />
+            </div>
             <!-- BLOCK "TYPE 9  WITH SLIDER PAGE 1.4" -->
             <!-- BLOCK "TYPE 11 STYLE 5 PAGE 3.6" -->
             <div class="block block-type-11 style-6 style-10 style-12">
@@ -764,7 +803,7 @@
                                     <div class="sm-offset-20"></div>
                                     <div class="copywrite small-13">
                                     © 2023 Master Pro. All Rights reserved.<br>  Development by <a href="https://fullframegroup.com" class="trademark yellow">Full Frame Group</a></div>
-                                    
+
                                     <span class="offset-40 md-offset-30"></span>
                                 </div>
                             </div>
@@ -782,5 +821,9 @@
     <script src="{{asset('assets/js/wow.min.js')}}"></script>
     <script src="{{asset('assets/js/isotope.pkgd.min.js')}}"></script>
     <script src="{{asset('assets/js/progressbar.min.js')}}"></script>
+
+    @livewireScripts
+
+
 </body>
 </html>
