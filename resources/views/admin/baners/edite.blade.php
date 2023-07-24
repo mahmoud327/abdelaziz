@@ -38,7 +38,7 @@
 
                                     <label class="text-lg"  for="image">يلزم تغيير الصوره</label>
                                     <div>
-                                        <img class="w-90 h-85" src="{{ Storage::url($baners->image)}}" alt="image">
+                                        <img class="w-90 h-85" src="{{ $baners->image_path}}" alt="image">
                                     </div>
                                     <p class="form-help-text mt-0 "> يفضل الا يزيد حجم الصوره عن 1.5mB</p>
                                     <input class="file-pond col-lg-4" name="image" id="image" type="file" >

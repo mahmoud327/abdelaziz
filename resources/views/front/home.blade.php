@@ -15,7 +15,7 @@
 
                         <div class="swiper-slide">
                             <div class="clip">
-                                <div class="bg-nofixed" style="background-image:url({{ Storage::url($baner->image) }})"></div>
+                                <div class="bg-nofixed" style="background-image:url( {{$baner->image_path }} )"></div>
                                 <span class="bg-span light10"></span>
                             </div>
                             <div class="table-view style-4">
@@ -28,7 +28,7 @@
                                                         {{$baner->name}}
                                                     </h1>
                                                     <span class="offset-10"></span>
-                                                    <p>{{$baner->description}}</p>
+                                                    <p>{!!$baner->description!!}</p>
                                                 </article>
                                                 <div class="decoration-vertical long active-element"></div>
                                                 <span class="button animated-button colored small-button slide-right-animation"><a href="/portfolio">{{ trans('lang.view all .....')}}</a></span>
@@ -354,164 +354,156 @@
             </div>
             </div>
             <!-- BLOCK "TYPE 11 STYLE 5 PAGE 3.6" -->
-            <!-- BLOCK "TYPE 10 STYLE 4-5-6 PAGE 1.4" -->
-            <div class="block block-type-10 style-4 style-5 style-6">
-                <span class="offset-155 md-offset-80"></span>
-                <div class="container">
+            <!-- BLOCK "TYPE 7" -->
+            <div class="block block-type-7">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                            <article class="main large align-center">
-                                <h2 class="h1 title bg-title active-element">{{trans('lang.OUR SERVICES')}}<span class="bg"></span>
-                                </h2>
+                        <div class="offset-155 md-offset-80"></div>
+                        <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12 wow fadeInDown" data-wow-delay="0.3s">
+                            <article class="main large dark-555555">
+                                <div class="offset-15 md-offset-0"></div>
+                                <h2 class="h1 title bg-title active-element">{{ trans('lang.OUR SERVICES') }}<span class="bg"></span></h2>
                                 <div class="offset-15"></div>
                                 <p>
-                                    {{ trans('lang.You can see all the services we provide') }}
+                                 Integer ultrices nisi at velit tincidunt tincidunt ac nec lacus. Ut auctor sapien orci, non blandit turpis placerat nec maximus suscipit sodales
                                 </p>
                                 <div class="offset-85 md-offset-40"></div>
                             </article>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-12" data-wow-delay="0.3s">
-                            <div class="animated-block scroll-animation block-type-7 normal-square animate-higher">
-                                <span class="top"></span>
-                                <span class="right"></span>
-                                <span class="bottom"></span>
-                                <span class="left"></span>
-                                <span class="center"></span>
-                                <a href="/portfolio" class="icon-wrapper circle-decoration animate-circle" id="circle-id">
-                                    <img src="{{ asset('assets/img/camer-removebg-preview.png') }}" width="120"
-                                        alt="">
-                                    <span class="center"></span>
-                                </a>
-                            </div>
-                            <div class="table-view">
-                                <div class="cell-view">
-                                    <article class="normal grei-919191">
-                                        <div class="clearfix">
-                                            <h5 class="h6-14 uppercased">
-                                                <a href="/portfolio" class="hover-effect-bold">
-                                                {{ trans('lang.NATURAL LANDSCAPE')}}
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div class="decoration-vertical active-element">
-
-                                        </div>
-                                        <p>@@@@@@@@@</p>
-                                        <span class="offset-25"></span>
-                                        <ul class="uppercased dark-555555 x-small decorated">
-                                            <li><a href="/portfolio">@@@@</a></li>
-                                            <li><a href="/portfolio">@@@@</a></li>
-                                            <li><a href="/portfolio">@@@@</a></li>
-                                            <li><a href="/portfolio">@@@@</a></li>
-                                        </ul>
-                                        <span class="offset-45 md-offset-25"></span>
-                                        <a href="/portfolio" class="button animated-button">
-                                            <span class="content">{{trans('lang.view all .....')}}</span>
-                                            <span class="top"></span>
-                                            <span class="right"></span>
-                                            <span class="left"></span>
-                                            <span class="bottom"></span>
+                        <div class="wrapper">
+                            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="thumb">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <div class="offset-65 md-offset-30"></div>
+                                        <a href="#" class="icon-wrapper circle-decoration animate-circle" id="circle-id">
+                                            <img src="img/icons/icon-5.svg" alt=""/>
+                                            <span class="center"></span>
                                         </a>
-                                    </article>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                        <article class="normal line-animation grei-919191">
+                                            <div class="offset-100 md-offset-30 xs-offset-15"></div>
+                                            <h5 class="h5 normal"><a href="#" class="hover-effect-bold uppercased">company branding</a></h5>
+                                            <div class="offset-15 md-offset-5"></div>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae unc at purus congue auctor augue</p>
+                                            <div class="line-decoration active-element"></div>
+                                        </article>
+                                        <div class="offset-85 md-offset-45"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12" data-wow-delay="0.3s">
-                            <span class="sm-offset-40"></span>
-                            <div class="animated-block scroll-animation block-type-7 normal-square animate-higher">
-                                <span class="top"></span>
-                                <span class="right"></span>
-                                <span class="bottom"></span>
-                                <span class="left"></span>
-                                <span class="center"></span>
-                                <a href="/portfolio" class="icon-wrapper circle-decoration animate-circle" id="circle-id2">
-                                    <img src="{{ asset('assets/img/camer-removebg-preview.png') }}" width="120"
-                                        alt="">
-                                    <span class="center"></span>
-                                </a>
-                            </div>
-                            <div class="table-view">
-                                <div class="cell-view">
-                                    <article class="normal grei-919191">
-                                        <div class="clearfix">
-                                            <h5 class="h6-14 uppercased">
-                                                <a href="/portfolio" class="hover-effect-bold">
-                                                    {{ trans('lang.PORTRAIT PHOTOGRAPHY') }}
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div class="decoration-vertical active-element"></div>
-                                        <p>@@@@@@@@@</p>
-                                        <span class="offset-25"></span>
-                                        <ul class="uppercased dark-555555 x-small decorated">
-                                            <li><a href="/portfolio">@@@@@</a></li>
-                                            <li><a href="/portfolio">@@@@@</a></li>
-                                            <li><a href="/portfolio">@@@@@</a></li>
-                                            <li><a href="/portfolio">@@@@@</a></li>
-                                        </ul>
-                                        <span class="offset-45 md-offset-25"></span>
-                                        <a href="/portfolio" class="button animated-button">
-                                            <span class="content">{{trans('lang.view all .....')}}</span>
-                                            <span class="top"></span>
-                                            <span class="right"></span>
-                                            <span class="left"></span>
-                                            <span class="bottom"></span>
+                            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.6s">
+                                <div class="thumb">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <div class="offset-65 md-offset-30"></div>
+                                        <a href="#" class="icon-wrapper circle-decoration animate-circle" id="circle-id1">
+                                            <img src="img/icons/icon-6.svg" alt=""/>
+                                            <span class="center"></span>
                                         </a>
-                                    </article>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                        <article class="normal  line-animation grei-919191">
+                                            <div class="offset-100 md-offset-30 xs-offset-15"></div>
+                                            <h5 class="h5 normal"><a href="#" class="hover-effect-bold uppercased">photography</a></h5>
+                                            <div class="offset-15 md-offset-5"></div>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae unc at purus congue auctor augue</p>
+                                        <div class="line-decoration active-element"></div>
+                                        </article>
+                                        <div class="offset-85 md-offset-45"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12" data-wow-delay="0.3s">
-                            <span class="sm-offset-40"></span>
-                            <div class="animated-block scroll-animation block-type-7 normal-square animate-higher">
-                                <span class="top"></span>
-                                <span class="right"></span>
-                                <span class="bottom"></span>
-                                <span class="left"></span>
-                                <span class="center"></span>
-                                <a href="/portfolio" class="icon-wrapper circle-decoration animate-circle" id="circle-id3">
-                                    <img src="{{ asset('assets/img/camer-removebg-preview.png') }}" width="120"
-                                        alt="">
-                                    <span class="center"></span>
-                                </a>
-                            </div>
-                            <div class="table-view">
-                                <div class="cell-view">
-                                    <article class="normal grei-919191">
-                                        <div class="clearfix">
-                                            <h5 class="h6-14 uppercased">
-                                                <a href="/portfolio" class="hover-effect-bold">
-                                                    {{ trans('lang.COMPANY BRANDING') }}
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div class="decoration-vertical active-element"></div>
-                                        <p>@@@@@@@@@</p>
-                                        <span class="offset-25"></span>
-                                        <ul class="uppercased dark-555555 x-small decorated">
-                                            <li><a href="/portfolio">@@@@</a></li>
-                                            <li><a href="/portfolio">@@@@ </a></li>
-                                            <li><a href="/portfolio">@@@@</a></li>
-                                            <li><a href="/portfolio">@@@@ </a></li>
-                                        </ul>
-                                        <span class="offset-45 md-offset-25"></span>
-                                        <a href="/portfolio" class="button animated-button">
-                                            <span class="content">{{trans('lang.view all .....')}}</span>
-                                            <span class="top"></span>
-                                            <span class="right"></span>
-                                            <span class="left"></span>
-                                            <span class="bottom"></span>
+                            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.9s">
+                                <div class="thumb">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <div class="offset-65 md-offset-30"></div>
+                                        <a href="#" class="icon-wrapper circle-decoration animate-circle" id="circle-id2">
+                                            <img src="img/icons/icon-7.svg" alt=""/>
+                                            <span class="center"></span>
                                         </a>
-                                    </article>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                        <article class="normal line-animation grei-919191">
+                                            <div class="offset-100 md-offset-30 xs-offset-15"></div>
+                                            <h5 class="h5 normal"><a href="#" class="hover-effect-bold uppercased">app development</a></h5>
+                                            <div class="offset-15 md-offset-5"></div>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae unc at purus congue auctor augue</p>
+                                        <div class="line-decoration active-element"></div>
+                                        </article>
+                                        <div class="offset-85 md-offset-45"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="1.2s">
+                                <div class="thumb">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <div class="offset-65 md-offset-30"></div>
+                                        <a href="#" class="icon-wrapper circle-decoration animate-circle" id="circle-id3">
+                                            <img src="img/icons/icon-8.svg" alt=""/>
+                                            <span class="center"></span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                        <article class="normal line-animation grei-919191">
+                                            <div class="offset-100 md-offset-30 xs-offset-15"></div>
+                                            <h5 class="h5 normal"><a href="#" class="hover-effect-bold uppercased">web design</a></h5>
+                                            <div class="offset-15 md-offset-5"></div>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae unc at purus congue auctor augue</p>
+                                        <div class="line-decoration active-element"></div>
+                                        </article>
+                                        <div class="offset-85 md-offset-45"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="1.5s">
+                                <div class="thumb">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <div class="offset-65 md-offset-30"></div>
+                                        <a href="#" class="icon-wrapper circle-decoration animate-circle" id="circle-id4">
+                                            <img src="img/icons/icon-9.svg" alt=""/>
+                                            <span class="center"></span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                        <article class="normal line-animation grei-919191">
+                                            <div class="offset-100 md-offset-30 xs-offset-15"></div>
+                                            <h5 class="h5 normal"><a href="#" class="hover-effect-bold uppercased">e-commerce</a></h5>
+                                            <div class="offset-15 md-offset-5"></div>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae unc at purus congue auctor augue</p>
+                                        <div class="line-decoration active-element"></div>
+                                        </article>
+                                        <div class="offset-85 md-offset-45"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="1.8s">
+                                <div class="thumb">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                        <div class="offset-65 md-offset-30"></div>
+                                        <a href="#" class="icon-wrapper circle-decoration animate-circle" id="circle-id5">
+                                            <img src="img/icons/icon-10.svg" alt=""/>
+                                            <span class="center"></span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                        <article class="normal line-animation grei-919191">
+                                            <div class="offset-100 md-offset-30 xs-offset-15"></div>
+                                            <h5 class="h5 normal"><a href="#" class="hover-effect-bold uppercased">video production</a></h5>
+                                            <div class="offset-15 md-offset-5"></div>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae unc at purus congue auctor augue</p>
+                                        <div class="line-decoration active-element"></div>
+                                        </article>
+                                        <div class="offset-85 md-offset-45"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- BLOCK "TYPE 10 STYLE 4-5-6 PAGE 1.4" -->
+            <!-- BLOCK "TYPE 7" -->
             <!-- BLOCK "TYPE 9  WITH SLIDER PAGE 1.4" -->
             <div class="block block-type-25">
                 <span class="offset-160 md-offset-80"></span>
@@ -724,65 +716,63 @@
 
             </div>
             <!-- BLOCK "TYPE 9  WITH SLIDER PAGE 1.4" -->
-            <!-- FOOTER STYLE 2-->
-            <footer class="normal style-2">
+            <!-- FOOTER STYLE 1-->
+            <footer class="small-13 style-4">
                 <div class="container">
                     <div class="row">
-                        <div class="offset-60 md-offset-30"></div>
-                        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 align-center">
+                        <span class="offset-60 md-offset-30"></span>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
                             <a href="#" class="footer-logo">
                                 <img src="{{asset('assets/img/mp.png')}}"  alt=""/>
                             </a>
-                            <article class="grei-6e6e6e">
-                                <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </article>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="offset-50 md-offset-25"></div>
-                        <nav class="col-md-12 col-sm-12 col-xs-12 x-small">
-                            <ul>
-                                <li><a href="/">{{trans('lang.Home')}}</a></li>
-                                <li><a href="about">{{trans('lang.ABOUT')}}</a></li>
-                                <li><a href="portfolio">{{trans('lang.PORTFOLIO')}}</a></li>
-                                {{-- <li><a href="#">Services</a></li> --}}
-                                <li><a href="/massage">{{trans('lang.CONTACT')}}</a></li>
-                            </ul>
-                        </nav>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="offset-50 md-offset-30 sm-offset-20"></div>
-                            <div class="follow">
-                                <a href="https://www.facebook.com/">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="https://www.instagram.com/">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                                <a href="https://twitter.com/">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="https://www.pinterest.com/">
-                                    <i class="fa fa-pinterest-p"></i>
-                                </a>
-                            </div>
-                            <div class="offset-60 md-offset-30"></div>
+                        <div class="sm-offset-30"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 contact">
+                            <h6 class="h6 white">CONTACT</h6>
+                            <div class="offset-20"></div>
+                            <address>
+                                <a href="mailto:no-replay@envato.com">E-Mail: suport@gmail.com</a>
+                                <a href="tel:+61383766284">Phone: +123 456 789</a>
+                            </address>
                         </div>
-
+                        <div class="xs-offset-30"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6">
+                            <h6 class="h6 white">OUR LOCATION</h6>
+                            <div class="offset-20"></div>
+                            <a href="http://maps.google.com/maps?q=New+York" target="_blank">49 @@@@@@@@@<br> @@@@@@@@@</a>
+                        </div>
+                        <div class="sm-offset-30"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 subscribe">
+                            <h6 class="h6 white">ABOUT US</h6>
+                            <div class="offset-20"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                        <span class="offset-60 md-offset-30"></span>
                     </div>
                 </div>
-                <div class="copywrite col-md-12 col-sm-12 col-xs-12">
-                    <span class="offset-40"></span>
-                    © 2023 Master Pro. All Rights reserved. <br> Development by <a href="https://tharrwa.com" class="trademark yellow">tharrwa</a>
-                    <div class="clear"></div>
-                    <span class="offset-40"></span>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <span class="offset-40 md-offset-30"></span>
+                                    <div class="follow">
+                                        <a href="https://www.facebook.com/">facebook</a>
+                                        <a href="https://twitter.com/">twitter</a>
+                                        <a href="https://www.instagram.com/">instagram</a>
+                                    </div>
+                                    <div class="sm-offset-20"></div>
+                                    <div class="copywrite small-13">
+                                    © 2023 Master Pro. All Rights reserved.<br>  Development by <a href="https://fullframegroup.com" class="trademark yellow">Full Frame Group</a></div>
+                                    
+                                    <span class="offset-40 md-offset-30"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </footer>
-            <!-- FOOTER STYLE 2-->
+            <!-- FOOTER STYLE 1-->
         </div>
     </div>
 

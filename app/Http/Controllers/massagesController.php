@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\massageStoreRequest;
-use App\Models\massages;
+use App\Models\contects;
 use Illuminate\Console\View\Components\Confirm;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,7 @@ class massagesController extends Controller
      */
     public function index()
     {
-        $massage = massages::all();
+        $massage = contects::first();
         return view('front.massage', compact('massage'));
     }
 

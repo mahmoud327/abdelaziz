@@ -26,9 +26,9 @@
                             <div class="normal ">
                                 <div class="line-decoration active-element"></div>
                                 <span class="h5 h6-14">{{ trans('lang.phone') }} :</span>
-                                <div class="tel small-13 "><span><a href="tel:613-837-66284" class="grei-919191 tel">+12
-                                            345 678 910</a></span><span>/</span><span><a href="tel:613-837-66284"
-                                            class="grei-919191 tel">+12 345 678 910</a></span></div>
+                                <div class="tel small-13 "><span><a href="tel:613-837-66284" class="grei-919191 tel">
+                                          </a></span><span>/</span><span><a href="tel:613-837-66284"
+                                            class="grei-919191 tel">{!!$massage->description!!}</a></span></div>
                                 <span class="offset-15 md-offset-20"></span>
                             </div>
                             <div class="normal">
@@ -37,17 +37,14 @@
                                 <div class="email small-13"><a class="grei-919191 email" href="mailto:support@evio.com"
                                         target="_top"><span>support@evio.com</span></a><span>/</span><a
                                         class="grei-919191 email" href="mailto:support@evio.com"
-                                        target="_top"><span>development@evio.com</span></a></div>
+                                        target="_top"><span>support@evio.com</span></a></div>
                                 <span class="offset-15 md-offset-20"></span>
                             </div>
                             <address class="normal grei-919191">
                                 <div class="line-decoration active-element"></div>
                                 <div class="h5 h6-14">{{ trans('lang.address') }} :</div>
-                                <div class="address small-13">49
-                                    @@@@@@@@
-                                    @@@@@@@@
-                                    @@@@@@@@
-                                    @@@@@</div>
+                                <div class="address small-13">{{$massage->name}}
+                                 </div>
 
                             </address>
                             <span class="offset-25 md-offset-15"></span>

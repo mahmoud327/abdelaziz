@@ -321,7 +321,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .bg-secondary {
   background-color: #fb7da4 !important;
 }
-
+body {
+    font-family: Arial, sans-serif;
+}
 .bg-success {
   background-color: #29db2d !important;
 }

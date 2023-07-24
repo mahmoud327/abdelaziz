@@ -118,15 +118,19 @@
                                                         alt="">
                                                     <span class="status"></span>
                                                 </span>
+                                                @auth
                                                 <span class="name">{{ Auth::user()->name }}</span>
+                                                @endif
                                             </span>
                                         </a>
 
                                         <!-- Dropdown -->
                                         <div class="adomx-dropdown-menu dropdown-menu-user" dir="ltr">
                                             <div class="head">
+                                                        @auth
                                                 <h5 class="name"><a href="/admin">{{ Auth::user()->name }}</a></h5>
                                                 <a class="mail" href="#">{{ Auth::user()->email }}</a>
+                                                @endif
                                             </div>
                                             <div class="body">
                                                 <ul>
@@ -180,7 +184,7 @@
 
                         <li class="has-sub-menu"><a href="#"><i class="ti-package"></i> <span> الرسائل </span></a>
                             <ul class="side-header-sub-menu">
-                                <li><a href="elements-accordions.html"><span>صندوق البريد</span></a></li>
+                                <!--<li><a href="elements-accordions.html"><span>صندوق البريد</span></a></li>-->
                                 <li><a href="{{ route('admin.contects.index')}}"><span>وسائل التواصل </span></a></li>
                             </ul>
                         </li>

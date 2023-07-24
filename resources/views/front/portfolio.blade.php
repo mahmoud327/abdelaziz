@@ -32,7 +32,7 @@
 
 
                           <div class="sorting-item animated-block hover-animated">
-                              <a href="#" class="img-link"><img src="{{ Storage::url($image->image) }}" height="100" width="100" alt="" /></a>
+                              <a href="#" class="img-link"><img src="{{ $image->image_path }}" height="100" width="100" alt="" /></a>
                               <div class="hover-content">
                                   <span class="top"></span>
                                   <span class="right"></span>

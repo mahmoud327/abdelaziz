@@ -7,8 +7,12 @@ use App\Models\photos;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
+use App\Traits\ImageTrait;
+
 class PhotosController extends Controller
 {
+        use ImageTrait;
+
     /**
      * Display a listing of the resource.
      */
@@ -32,13 +36,15 @@ class PhotosController extends Controller
     public function store(photoStoreRequest $request)
     {
 
-        $image = $request->file('image')->store('public/photos');
-
-        photos::create([
+     $photo=photos::create([
             'name' => $request->name,
             'description' => $request->description,
-            'image' => $image
         ]);
+         
+         $path=$this->uploadFile('uploads/photos', $request->file('image'));
+        $photo->update(['image' => $path]);
+
+        
         return to_route('admin.photos.index');
     }
 
@@ -61,15 +67,17 @@ class PhotosController extends Controller
 
             $photos = photos::findorFail($id);
             $photos->name = $request->name;
-            foreach (['image'] as $key) {
-                if($request->$key){
-                    $image = $request->$key;
-                    $image_name = $image->hashName();
-                    $save[$key] = $image->storeAs('assets/uploads/users', $image_name, 'public_path');
-                }
-            }
+         
+            
+    
+          
             $photos->description = $request->description;
             $photos->save();
+            if($request->file('image')){
+              $path= $this->uploadFile('uploads/photos', $request->file('image'));
+               $photos->update(['image' => $path]);
+             
+            }
             return to_route('admin.photos.index');
         }
     }

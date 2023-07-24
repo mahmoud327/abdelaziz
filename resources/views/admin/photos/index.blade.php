@@ -38,7 +38,7 @@
                                         <tr>
                                             <td>{{$photo->id}}</td>
                                             <td>
-                                                <img src="{{ Storage::url($photo->image) }}" alt="image" class="w-20 h-20 rounded-circle">
+                                                <img src="{{ $photo->image_path }}" alt="image" width="100px" height="100px" class="w-20 h-20 rounded-circle">
                                                 {{-- @if ($photo->image2)
                                                     <img src="{{ asset($photo->image2) }}" alt="image2" class="w-16 h-16 rounded-circle">
                                                     @endif

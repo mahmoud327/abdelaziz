@@ -6,9 +6,12 @@ use App\Http\Requests\banerStoreRequest;
 use App\Models\baners;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Traits\ImageTrait;
 
 class banersController extends Controller
 {
+use ImageTrait;
+
     /**
      * Display a listing of the resource.
      */
@@ -32,13 +35,17 @@ class banersController extends Controller
     public function store(banerStoreRequest $request)
     {
 
-        $image = $request->file('image')->store('public/baners');
 
-        baners::create([
+       $banner= baners::create([
             'name' => $request->name,
             'description' => $request->description,
-            'image' => $image
         ]);
+        
+             if($request->file('image')){
+              $path= $this->uploadFile('uploads/banners', $request->file('image'));
+               $banner->update(['image' => $path]);
+             }
+             
         return to_route('admin.baners.index');
     }
 
@@ -61,15 +68,15 @@ class banersController extends Controller
 
             $baners = baners::findorFail($id);
             $baners->name = $request->name;
-            foreach (['image'] as $key) {
-                if($request->$key){
-                    $image = $request->$key;
-                    $image_name = $image->hashName();
-                    $save[$key] = $image->storeAs('assets/uploads/users', $image_name, 'public_path');
-                }
-            }
+      
             $baners->description = $request->description;
             $baners->save();
+            
+            if($request->file('image')){
+              $path= $this->uploadFile('uploads/banners', $request->file('image'));
+               $baners->update(['image' => $path]);
+             }
+             
             return to_route('admin.baners.index');
         }
     }

@@ -38,7 +38,7 @@
                                             <tr>
                                                 <td>{{$baner->id}}</td>
                                                 <td>
-                                                    <img src="{{ Storage::url($baner->image) }}" alt="image" class="w-16 h-16 rounded-circle">
+                                                    <img src="{{ $baner->image_path }}" alt="image" width="100px" height="100px"class="w-16 h-16 rounded-circle">
                                                     {{-- @if ($baner->image2)
                                                         <img src="{{ asset($baner->image2) }}" alt="image2" class="w-16 h-16 rounded-circle">
                                                         @endif
