@@ -72,7 +72,7 @@
 
 
 
-                @if ($work->name)
+                @if ($work->image)
 
                     @for ($i = 0; $i < count($work->image); $i++)
                         <div class="images col-md-6 col-sm-6 col-xs-12 left-thumb">
