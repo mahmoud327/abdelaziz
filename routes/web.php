@@ -35,8 +35,8 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
     Route::view('/services', 'front.sirv');
     // Route::view('/photos', 'admin.photos.index');
 
-    Route::get('/dashboard', function () {
-        return view('dashboard');
+    Route::get('/admin', function () {
+        return view('admin');
     })->middleware(['auth', 'verified'])->name('dashboard');
 
     Route::middleware(['auth', 'admin'])->group(function () {

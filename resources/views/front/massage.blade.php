@@ -101,4 +101,10 @@
         </div>
     </div>
     <!-- BLOCK "TYPE 22 with MAP" -->
+        <script src="{{asset('assets/js/jquery-2.1.3.min.js')}}"></script>
+    <script src="{{asset('assets/js/idangerous.swiper.min.js')}}"></script>
+    <script src="{{asset('assets/js/global.js')}}"></script>
+    <script src="{{asset('assets/js/wow.min.js')}}"></script>
+    <script src="{{asset('assets/js/isotope.pkgd.min.js')}}"></script>
+    <script src="{{asset('assets/js/progressbar.min.js')}}"></script>
     @include('layouts.userfooter')

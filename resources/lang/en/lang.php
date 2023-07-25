@@ -36,5 +36,7 @@ return[
     'Name' => 'Name',
     'Message' => 'Message',
     'Send Masseg' => 'Send Masseg',
+    'We are Creative Digital Agency' => 'We are Creative Digital Agency',
+        'PERFECT & ELEGANT' => 'PERFECT & ELEGANT'
 ];
 ?>

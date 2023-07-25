@@ -467,9 +467,9 @@
                                 <div class="sorting-item filter-4">
                                     <img src="{{asset('assets/img/products/234567.JPG')}}" height="170" width="170" alt="" />
                                 </div>
-                                <div class="sorting-item filter-1">
-                                    <img src="{{asset('assets/img/products/7654.JPG')}}" height="170" width="170" alt="" />
-                                </div>
+                                <!--<div class="sorting-item filter-1">-->
+                                <!--    <img src="{{asset('assets/img/products/7654.JPG')}}" height="170" width="170" alt="" />-->
+                                <!--</div>-->
 
                             </div>
                             <div class="clear"></div>
@@ -581,64 +581,63 @@
             <span class="offset-145 md-offset-55 xs-offset-65"></span>
 
         </div>
-        <footer class="normal style-2">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-60 md-offset-30"></div>
-                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 align-center">
-                        <a href="#" class="footer-logo">
-                            <img src="{{asset('assets/img/mp.png')}}"  alt=""/>
-                        </a>
-                        <article class="grei-6e6e6e">
-                            <p>
-                                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                            </p>
-                        </article>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-50 md-offset-25"></div>
-                    <nav class="col-md-12 col-sm-12 col-xs-12 x-small">
-                        <ul>
-                            <li><a href="/">{{trans('lang.Home')}}</a></li>
-                            <li><a href="about">{{trans('lang.ABOUT')}}</a></li>
-                            <li><a href="portfolio">{{trans('lang.PORTFOLIO')}}</a></li>
-                            {{-- <li><a href="#">Services</a></li> --}}
-                            <li><a href="/massage">{{trans('lang.CONTACT')}}</a></li>
-                        </ul>
-                    </nav>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="offset-50 md-offset-30 sm-offset-20"></div>
-                        <div class="follow">
-                            <a href="https://www.facebook.com/">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="https://twitter.com/">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.pinterest.com/">
-                                <i class="fa fa-pinterest-p"></i>
+                   <!-- FOOTER STYLE 1-->
+            <footer class="small-13 style-4">
+                <div class="container">
+                    <div class="row">
+                        <span class="offset-60 md-offset-30"></span>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <a href="#" class="footer-logo">
+                                <img src="{{asset('assets/img/mp.png')}}"  alt=""/>
                             </a>
                         </div>
-                        <div class="offset-60 md-offset-30"></div>
+                        <div class="sm-offset-30"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 contact">
+                            <h6 class="h6 white">CONTACT</h6>
+                            <div class="offset-20"></div>
+                            <address>
+                                <a href="mailto:no-replay@envato.com">E-Mail: suport@gmail.com</a>
+                                <a href="tel:+61383766284">Phone: +123 456 789</a>
+                            </address>
+                        </div>
+                        <div class="xs-offset-30"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6">
+                            <h6 class="h6 white">OUR LOCATION</h6>
+                            <div class="offset-20"></div>
+                            <a href="http://maps.google.com/maps?q=New+York" target="_blank">49 @@@@@@@@@<br> @@@@@@@@@</a>
+                        </div>
+                        <div class="sm-offset-30"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 subscribe">
+                            <h6 class="h6 white">ABOUT US</h6>
+                            <div class="offset-20"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                        <span class="offset-60 md-offset-30"></span>
                     </div>
-
                 </div>
-            </div>
-            <div class="copywrite col-md-12 col-sm-12 col-xs-12">
-                <span class="offset-40"></span>
-                © 2023 Master Pro. All Rights reserved. <br> Development by <a href="https://tharrwa.com" class="trademark yellow">tharrwa</a>
-                <div class="clear"></div>
-                <span class="offset-40"></span>
-            </div>
-        </footer>
-        <!-- FOOTER STYLE 2-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <span class="offset-40 md-offset-30"></span>
+                                    <div class="follow">
+                                        <a href="https://www.facebook.com/">facebook</a>
+                                        <a href="https://twitter.com/">twitter</a>
+                                        <a href="https://www.instagram.com/">instagram</a>
+                                    </div>
+                                    <div class="sm-offset-20"></div>
+                                    <div class="copywrite small-13">
+                                    © 2023 Master Pro. All Rights reserved.<br>  Development by <a href="https://fullframegroup.com" class="trademark yellow">Full Frame Group</a></div>
+
+                                    <span class="offset-40 md-offset-30"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER STYLE 1-->
     </div>
 </div>
 

@@ -36,4 +36,6 @@ return[
     'Name' => 'الاسم',
     'Message' => 'اكتب الرساله',
     'Send Masseg' => 'ارسال',
+    'We are Creative Digital Agency' => 'نحن وكالة رقمية إبداعية',
+    'PERFECT & ELEGANT' => 'مثالي & أنيق'
 ];

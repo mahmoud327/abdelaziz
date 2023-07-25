@@ -1,6 +1,7 @@
 /.phpunit.cache
 /node_modules
 /vendor
+/waslt
 /public
 .env
 .env.backup
