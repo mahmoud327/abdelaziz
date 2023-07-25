@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-md-7">
                             <label> الوظيفة: </label>
-                            <input type="text" class="form-control" name="title">
+                            <input type="text" class="form-control" name="job">
 
 
                         </div>
