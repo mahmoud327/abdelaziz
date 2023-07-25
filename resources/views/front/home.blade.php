@@ -1,4 +1,7 @@
 @include('layouts.userheader')
+<style>
+
+</style>
     <!-- HEADER STYLE 1 -->
     <div id="content-wrapper" class="without-border-default style-3">
         <span class="top-line"></span>
@@ -398,7 +401,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="offset-155 md-offset-80"></div>
-                        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12" data-wow-delay="0.3s">
+                        <div class="" data-wow-delay="0.3s">
                             <article class="main large align-center">
                                 <div class="offset-15 md-offset-0"></div>
                                 <h2 class="h1 title bg-title active-element">{{ trans('lang.OUR SERVICES') }}<span class="bg"></span></h2>
@@ -411,7 +414,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="wrapper">
+                        <div class="wrapper row">
                             <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="thumb">
                                     <div class="col-md-3 col-sm-3 col-xs-3">

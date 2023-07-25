@@ -58,7 +58,7 @@
                         <div class="col-md-7">
                             <label> الوظيفة: </label>
                             <input type="text" class="form-control" name="job">
-
+ُُ
 
                         </div>
                         <div class="col-md-7">
