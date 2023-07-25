@@ -10,7 +10,7 @@ class Work extends Model
 {
 
     use HasFactory;
-    protected $fillable =['image','link_youtube', 'desc', 'description','category_id','name','main_image'];
+    protected $fillable =['image','link_youtube', 'desc', 'description','category_id','name','main_image','client_name','job','title'];
 
 
     protected $casts=[

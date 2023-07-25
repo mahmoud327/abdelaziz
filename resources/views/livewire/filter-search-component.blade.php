@@ -30,8 +30,12 @@
                         <div class="grid-sizer"></div>
                         @foreach ($works as $work)
                         <div class="sorting-item animated-block hover-animated filter-5">
-                            <img src="{{ $work->image_path }}" height="270" width="270"
-                                alt="" />
+
+                            <a {{ route('works.show',$work->id)}}>
+
+                                <img src="{{ $work->image_path }}" height="270" width="270"
+                                    alt="" />
+                            </a>
                             <div class="hover-content">
                                 <span class="top"></span>
                                 <span class="right"></span>
@@ -43,7 +47,7 @@
                                     </div>
                                     <span class="offset-15"></span>
                                     <a class="button animated-button colored small-button"
-                                        href="portfolio-detail-1.html">{{optional($work->category)->name   }}</a>
+                                        href="{{ route('works.show',$work->id)}}">{{optional($work->category)->name   }}</a>
                                 </div>
                             </div>
                         </div>

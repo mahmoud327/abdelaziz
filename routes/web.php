@@ -10,6 +10,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\banersController as UserBanersController;
 use App\Http\Controllers\User\photosController as UserPhotosController;
 use App\Http\Controllers\WorkController;
+use App\Models\Work;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -24,37 +25,40 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-    // Route::get('/', function () {
-    //     return view('front.home');
-    // });
-    Route::get('/', [UserPhotosController::class, 'index'])->name('/');
-    Route::resource('/', UserBanersController::class);
-    Route::resource('/massage', massagesController::class);
-    Route::resource('/portfolio', UserPhotosController::class);
-    Route::view('/about', 'front.about');
-    Route::view('/services', 'front.sirv');
-    // Route::view('/photos', 'admin.photos.index');
+// Route::get('/', function () {
+//     return view('front.home');
+// });
+Route::get('/', [UserPhotosController::class, 'index'])->name('/');
+Route::resource('/', UserBanersController::class);
+Route::resource('/massage', massagesController::class);
+Route::resource('/portfolio', UserPhotosController::class);
+Route::view('/about', 'front.about');
+Route::view('/services', 'front.sirv');
+Route::get('worrk/{id}', function ($id) {
+    $work = Work::with('category')->find($id);
+    return view('front.works.show', compact('work'));
+})->name('works.show');
 
-    Route::get('/admin', function () {
-        return view('admin');
-    })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/admin', function () {
+    return view('admin');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-    Route::middleware(['auth', 'admin'])->group(function () {
-        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    });
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
-    Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(function () {
-        Route::get('/', [AdminController::class, 'index'])->name('index');
+Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('index');
 
-        Route::resource('categories', CategoryController::class);
-        Route::resource('works', WorkController::class);
+    Route::resource('categories', CategoryController::class);
+    Route::resource('works', WorkController::class);
 
-        Route::resource('/photos', PhotosController::class);
-        Route::resource('/baners', banersController::class);
-        Route::resource('/contects', contectsController::class);
-    });
+    Route::resource('/photos', PhotosController::class);
+    Route::resource('/baners', banersController::class);
+    Route::resource('/contects', contectsController::class);
+});
 
 
 

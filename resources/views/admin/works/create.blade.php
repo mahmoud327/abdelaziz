@@ -31,7 +31,7 @@
 
                         <div class="col-md-7">
                             <label> القسم: </label>
-                            <select  name="category_id" required class="form-control">
+                            <select name="category_id" required class="form-control">
                                 @foreach ($categories as $cat)
                                     <option value="{{ $cat->id }}">
                                         {{ $cat->name }}
@@ -42,12 +42,24 @@
                         </div>
 
                         <div class="col-md-7">
-                            <label> وصف: </label>
-                            <textarea class="form-control" name="description">
+                            <label> عنوان الصورة: </label>
+                            <input type="text" class="form-control" name="title">
 
-                            </textarea>
 
-                            </select>
+
+                        </div>
+                        <div class="col-md-7">
+                            <label> اسم العميل: </label>
+                            <input type="text"class="form-control" name="client_name">
+
+
+
+                        </div>
+                        <div class="col-md-7">
+                            <label> الوظيفة: </label>
+                            <input type="text" class="form-control" name="title">
+
+
                         </div>
                         <div class="col-md-7">
                             <label> الصورة الاساسية: </label>
@@ -65,8 +77,8 @@
 
                                     <label> رفع الصورة: </label>
 
-                                    <input class="form-control" data-parsley-class-handler="#lnWrapper" name="link_youtube[]"
-                                        type="text" placeholder="لينك اليوتيوب">
+                                    <input class="form-control" data-parsley-class-handler="#lnWrapper"
+                                        name="link_youtube[]" type="text" placeholder="لينك اليوتيوب">
 
 
                                     <input class="form-control" data-parsley-class-handler="#lnWrapper" name="image[]"
@@ -74,7 +86,7 @@
 
                                     <label> وصف الصورة: </label>
 
-                                    <textarea class="form-control" data-parsley-class-handler="#lnWrapper"   name="desc[]" type="file" placeholder="">
+                                    <textarea class="form-control" data-parsley-class-handler="#lnWrapper" name="desc[]" type="file" placeholder="">
                                             </textarea>
 
                                     <div class="clearfix"></div>

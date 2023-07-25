@@ -99,9 +99,9 @@ class WorkController extends Controller
      */
     public function destroy($id)
     {
-        photos::findorFail($id)->delete();
+        Work::findorFail($id)->delete();
 
 
-        return to_route('admin.photos.index');
+        return to_route('admin.works.index');
     }
 }
